@@ -1,0 +1,250 @@
+The computing device used is:  GPU
+Total number of parameters: 879410
+Architecture of Model have saved in Tensorboard!
+[0;33mload data from ./prepare_dataset/data_path_list/DRIVE/train.txt [0m
+ori data shape < ori_imgs:(20, 3, 584, 565) GTs:(20, 1, 584, 565) FOVs:(20, 1, 584, 565)
+imgs pixel range 0-255: 
+GTs pixel range 0-255: 
+FOVs pixel range 0-255: 
+==================data have loaded======================
+
+
+EPOCH: 1/50 --(learn_rate:0.000500) | Time: Wed Nov  6 19:54:10 2024
+OrderedDict([('epoch', 1), ('train_loss', 0.156846), ('val_loss', 0.119093), ('val_acc', 0.953417), ('val_f1', 0.807107), ('val_auc_roc', 0.975984)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 1 | AUC_roc: 0.9759842272868589
+
+EPOCH: 2/50 --(learn_rate:0.000500) | Time: Wed Nov  6 19:56:25 2024
+OrderedDict([('epoch', 2), ('train_loss', 0.120158), ('val_loss', 0.111759), ('val_acc', 0.956072), ('val_f1', 0.814484), ('val_auc_roc', 0.978982)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 2 | AUC_roc: 0.9789821957446174
+
+EPOCH: 3/50 --(learn_rate:0.000498) | Time: Wed Nov  6 19:58:37 2024
+OrderedDict([('epoch', 3), ('train_loss', 0.11517), ('val_loss', 0.108082), ('val_acc', 0.957055), ('val_f1', 0.821846), ('val_auc_roc', 0.980624)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 3 | AUC_roc: 0.9806239439673554
+
+EPOCH: 4/50 --(learn_rate:0.000496) | Time: Wed Nov  6 20:00:48 2024
+OrderedDict([('epoch', 4), ('train_loss', 0.112321), ('val_loss', 0.105), ('val_acc', 0.957871), ('val_f1', 0.82451), ('val_auc_roc', 0.98168)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 4 | AUC_roc: 0.9816802844288238
+
+EPOCH: 5/50 --(learn_rate:0.000492) | Time: Wed Nov  6 20:03:39 2024
+OrderedDict([('epoch', 5), ('train_loss', 0.110814), ('val_loss', 0.104155), ('val_acc', 0.958193), ('val_f1', 0.824776), ('val_auc_roc', 0.981898)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 5 | AUC_roc: 0.9818978880577134
+
+EPOCH: 6/50 --(learn_rate:0.000488) | Time: Wed Nov  6 20:06:38 2024
+OrderedDict([('epoch', 6), ('train_loss', 0.109258), ('val_loss', 0.103531), ('val_acc', 0.958364), ('val_f1', 0.825187), ('val_auc_roc', 0.982335)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 6 | AUC_roc: 0.9823350439222042
+
+EPOCH: 7/50 --(learn_rate:0.000482) | Time: Wed Nov  6 20:09:12 2024
+OrderedDict([('epoch', 7), ('train_loss', 0.108419), ('val_loss', 0.1024), ('val_acc', 0.958683), ('val_f1', 0.828927), ('val_auc_roc', 0.982841)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 7 | AUC_roc: 0.982841313764161
+
+EPOCH: 8/50 --(learn_rate:0.000476) | Time: Wed Nov  6 20:11:23 2024
+OrderedDict([('epoch', 8), ('train_loss', 0.107562), ('val_loss', 0.10233), ('val_acc', 0.958839), ('val_f1', 0.82702), ('val_auc_roc', 0.982739)])
+Best performance at Epoch: 7 | AUC_roc: 0.982841313764161
+
+EPOCH: 9/50 --(learn_rate:0.000469) | Time: Wed Nov  6 20:13:34 2024
+OrderedDict([('epoch', 9), ('train_loss', 0.106817), ('val_loss', 0.10132), ('val_acc', 0.958999), ('val_f1', 0.828101), ('val_auc_roc', 0.98317)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 9 | AUC_roc: 0.9831700242918344
+
+EPOCH: 10/50 --(learn_rate:0.000461) | Time: Wed Nov  6 20:15:45 2024
+OrderedDict([('epoch', 10), ('train_loss', 0.10612), ('val_loss', 0.100095), ('val_acc', 0.959504), ('val_f1', 0.828108), ('val_auc_roc', 0.983554)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 10 | AUC_roc: 0.9835542570349469
+
+EPOCH: 11/50 --(learn_rate:0.000452) | Time: Wed Nov  6 20:17:56 2024
+OrderedDict([('epoch', 11), ('train_loss', 0.105591), ('val_loss', 0.099513), ('val_acc', 0.959643), ('val_f1', 0.82977), ('val_auc_roc', 0.983829)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 11 | AUC_roc: 0.9838285485900954
+
+EPOCH: 12/50 --(learn_rate:0.000443) | Time: Wed Nov  6 20:20:07 2024
+OrderedDict([('epoch', 12), ('train_loss', 0.10501), ('val_loss', 0.099173), ('val_acc', 0.959737), ('val_f1', 0.832124), ('val_auc_roc', 0.984036)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 12 | AUC_roc: 0.984036304511283
+
+EPOCH: 13/50 --(learn_rate:0.000432) | Time: Wed Nov  6 20:22:18 2024
+OrderedDict([('epoch', 13), ('train_loss', 0.104639), ('val_loss', 0.100419), ('val_acc', 0.959316), ('val_f1', 0.830697), ('val_auc_roc', 0.983599)])
+Best performance at Epoch: 12 | AUC_roc: 0.984036304511283
+
+EPOCH: 14/50 --(learn_rate:0.000421) | Time: Wed Nov  6 20:24:29 2024
+OrderedDict([('epoch', 14), ('train_loss', 0.104236), ('val_loss', 0.098104), ('val_acc', 0.960044), ('val_f1', 0.832505), ('val_auc_roc', 0.984399)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 14 | AUC_roc: 0.9843987879677804
+
+EPOCH: 15/50 --(learn_rate:0.000409) | Time: Wed Nov  6 20:26:39 2024
+OrderedDict([('epoch', 15), ('train_loss', 0.103793), ('val_loss', 0.098354), ('val_acc', 0.959951), ('val_f1', 0.83299), ('val_auc_roc', 0.984381)])
+Best performance at Epoch: 14 | AUC_roc: 0.9843987879677804
+
+EPOCH: 16/50 --(learn_rate:0.000397) | Time: Wed Nov  6 20:28:49 2024
+OrderedDict([('epoch', 16), ('train_loss', 0.103545), ('val_loss', 0.097214), ('val_acc', 0.960398), ('val_f1', 0.831374), ('val_auc_roc', 0.984735)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 16 | AUC_roc: 0.9847352403186375
+
+EPOCH: 17/50 --(learn_rate:0.000384) | Time: Wed Nov  6 20:31:00 2024
+OrderedDict([('epoch', 17), ('train_loss', 0.103037), ('val_loss', 0.097864), ('val_acc', 0.960004), ('val_f1', 0.834083), ('val_auc_roc', 0.984634)])
+Best performance at Epoch: 16 | AUC_roc: 0.9847352403186375
+
+EPOCH: 18/50 --(learn_rate:0.000370) | Time: Wed Nov  6 20:33:10 2024
+OrderedDict([('epoch', 18), ('train_loss', 0.102687), ('val_loss', 0.097058), ('val_acc', 0.960295), ('val_f1', 0.830743), ('val_auc_roc', 0.98488)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 18 | AUC_roc: 0.9848800117895411
+
+EPOCH: 19/50 --(learn_rate:0.000356) | Time: Wed Nov  6 20:35:20 2024
+OrderedDict([('epoch', 19), ('train_loss', 0.102373), ('val_loss', 0.097995), ('val_acc', 0.959981), ('val_f1', 0.83363), ('val_auc_roc', 0.984691)])
+Best performance at Epoch: 18 | AUC_roc: 0.9848800117895411
+
+EPOCH: 20/50 --(learn_rate:0.000342) | Time: Wed Nov  6 20:37:30 2024
+OrderedDict([('epoch', 20), ('train_loss', 0.102093), ('val_loss', 0.096694), ('val_acc', 0.960458), ('val_f1', 0.834819), ('val_auc_roc', 0.984989)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 20 | AUC_roc: 0.9849887520834049
+
+EPOCH: 21/50 --(learn_rate:0.000327) | Time: Wed Nov  6 20:39:41 2024
+OrderedDict([('epoch', 21), ('train_loss', 0.101743), ('val_loss', 0.09574), ('val_acc', 0.960782), ('val_f1', 0.835758), ('val_auc_roc', 0.985342)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 21 | AUC_roc: 0.9853417009012858
+
+EPOCH: 22/50 --(learn_rate:0.000312) | Time: Wed Nov  6 20:41:51 2024
+OrderedDict([('epoch', 22), ('train_loss', 0.101308), ('val_loss', 0.095647), ('val_acc', 0.960775), ('val_f1', 0.836074), ('val_auc_roc', 0.985364)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 22 | AUC_roc: 0.9853637321069897
+
+EPOCH: 23/50 --(learn_rate:0.000297) | Time: Wed Nov  6 20:44:21 2024
+OrderedDict([('epoch', 23), ('train_loss', 0.101086), ('val_loss', 0.095439), ('val_acc', 0.960845), ('val_f1', 0.836639), ('val_auc_roc', 0.985492)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 23 | AUC_roc: 0.9854924427411883
+
+EPOCH: 24/50 --(learn_rate:0.000281) | Time: Wed Nov  6 20:46:44 2024
+OrderedDict([('epoch', 24), ('train_loss', 0.10081), ('val_loss', 0.094916), ('val_acc', 0.960984), ('val_f1', 0.83641), ('val_auc_roc', 0.985634)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 24 | AUC_roc: 0.9856335757492052
+
+EPOCH: 25/50 --(learn_rate:0.000266) | Time: Wed Nov  6 20:49:00 2024
+OrderedDict([('epoch', 25), ('train_loss', 0.100469), ('val_loss', 0.094815), ('val_acc', 0.960983), ('val_f1', 0.834099), ('val_auc_roc', 0.985717)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 25 | AUC_roc: 0.9857169822738182
+
+EPOCH: 26/50 --(learn_rate:0.000250) | Time: Wed Nov  6 20:51:15 2024
+OrderedDict([('epoch', 26), ('train_loss', 0.10016), ('val_loss', 0.094103), ('val_acc', 0.961285), ('val_f1', 0.837621), ('val_auc_roc', 0.985882)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 26 | AUC_roc: 0.9858818438702325
+
+EPOCH: 27/50 --(learn_rate:0.000234) | Time: Wed Nov  6 20:53:28 2024
+OrderedDict([('epoch', 27), ('train_loss', 0.099904), ('val_loss', 0.093962), ('val_acc', 0.961262), ('val_f1', 0.83887), ('val_auc_roc', 0.985998)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 27 | AUC_roc: 0.9859984170345601
+
+EPOCH: 28/50 --(learn_rate:0.000219) | Time: Wed Nov  6 20:55:42 2024
+OrderedDict([('epoch', 28), ('train_loss', 0.099561), ('val_loss', 0.093857), ('val_acc', 0.961263), ('val_f1', 0.837513), ('val_auc_roc', 0.98606)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 28 | AUC_roc: 0.9860600850952764
+
+EPOCH: 29/50 --(learn_rate:0.000203) | Time: Wed Nov  6 20:57:58 2024
+OrderedDict([('epoch', 29), ('train_loss', 0.09939), ('val_loss', 0.09315), ('val_acc', 0.961573), ('val_f1', 0.837966), ('val_auc_roc', 0.986267)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 29 | AUC_roc: 0.9862674115412138
+
+EPOCH: 30/50 --(learn_rate:0.000188) | Time: Wed Nov  6 21:00:11 2024
+OrderedDict([('epoch', 30), ('train_loss', 0.09908), ('val_loss', 0.09317), ('val_acc', 0.961486), ('val_f1', 0.838997), ('val_auc_roc', 0.986282)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 30 | AUC_roc: 0.9862820821931672
+
+EPOCH: 31/50 --(learn_rate:0.000173) | Time: Wed Nov  6 21:02:24 2024
+OrderedDict([('epoch', 31), ('train_loss', 0.09883), ('val_loss', 0.093254), ('val_acc', 0.961461), ('val_f1', 0.83815), ('val_auc_roc', 0.986268)])
+Best performance at Epoch: 30 | AUC_roc: 0.9862820821931672
+
+EPOCH: 32/50 --(learn_rate:0.000158) | Time: Wed Nov  6 21:04:41 2024
+OrderedDict([('epoch', 32), ('train_loss', 0.098635), ('val_loss', 0.092544), ('val_acc', 0.961716), ('val_f1', 0.838862), ('val_auc_roc', 0.986492)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 32 | AUC_roc: 0.9864923516375146
+
+EPOCH: 33/50 --(learn_rate:0.000144) | Time: Wed Nov  6 21:06:55 2024
+OrderedDict([('epoch', 33), ('train_loss', 0.098277), ('val_loss', 0.092571), ('val_acc', 0.961689), ('val_f1', 0.839589), ('val_auc_roc', 0.986477)])
+Best performance at Epoch: 32 | AUC_roc: 0.9864923516375146
+
+EPOCH: 34/50 --(learn_rate:0.000130) | Time: Wed Nov  6 21:09:12 2024
+OrderedDict([('epoch', 34), ('train_loss', 0.098053), ('val_loss', 0.092087), ('val_acc', 0.961799), ('val_f1', 0.839864), ('val_auc_roc', 0.986662)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 34 | AUC_roc: 0.9866615802550206
+
+EPOCH: 35/50 --(learn_rate:0.000116) | Time: Wed Nov  6 21:11:26 2024
+OrderedDict([('epoch', 35), ('train_loss', 0.098001), ('val_loss', 0.092058), ('val_acc', 0.961787), ('val_f1', 0.839651), ('val_auc_roc', 0.986688)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 35 | AUC_roc: 0.9866881397183609
+
+EPOCH: 36/50 --(learn_rate:0.000103) | Time: Wed Nov  6 21:13:44 2024
+OrderedDict([('epoch', 36), ('train_loss', 0.097821), ('val_loss', 0.091822), ('val_acc', 0.961834), ('val_f1', 0.839728), ('val_auc_roc', 0.986779)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 36 | AUC_roc: 0.986778708152266
+
+EPOCH: 37/50 --(learn_rate:0.000091) | Time: Wed Nov  6 21:16:00 2024
+OrderedDict([('epoch', 37), ('train_loss', 0.097594), ('val_loss', 0.091492), ('val_acc', 0.962008), ('val_f1', 0.840707), ('val_auc_roc', 0.986856)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 37 | AUC_roc: 0.9868564747137415
+
+EPOCH: 38/50 --(learn_rate:0.000079) | Time: Wed Nov  6 21:18:12 2024
+OrderedDict([('epoch', 38), ('train_loss', 0.097438), ('val_loss', 0.091513), ('val_acc', 0.961984), ('val_f1', 0.840337), ('val_auc_roc', 0.986881)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 38 | AUC_roc: 0.9868814987981791
+
+EPOCH: 39/50 --(learn_rate:0.000068) | Time: Wed Nov  6 21:20:25 2024
+OrderedDict([('epoch', 39), ('train_loss', 0.097315), ('val_loss', 0.091222), ('val_acc', 0.962085), ('val_f1', 0.841275), ('val_auc_roc', 0.986969)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 39 | AUC_roc: 0.9869686973592002
+
+EPOCH: 40/50 --(learn_rate:0.000057) | Time: Wed Nov  6 21:22:38 2024
+OrderedDict([('epoch', 40), ('train_loss', 0.097071), ('val_loss', 0.090967), ('val_acc', 0.96217), ('val_f1', 0.841858), ('val_auc_roc', 0.987059)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 40 | AUC_roc: 0.9870594425979043
+
+EPOCH: 41/50 --(learn_rate:0.000048) | Time: Wed Nov  6 21:24:52 2024
+OrderedDict([('epoch', 41), ('train_loss', 0.096907), ('val_loss', 0.090932), ('val_acc', 0.962189), ('val_f1', 0.841126), ('val_auc_roc', 0.987059)])
+Best performance at Epoch: 40 | AUC_roc: 0.9870594425979043
+
+EPOCH: 42/50 --(learn_rate:0.000039) | Time: Wed Nov  6 21:27:06 2024
+OrderedDict([('epoch', 42), ('train_loss', 0.096808), ('val_loss', 0.09094), ('val_acc', 0.96215), ('val_f1', 0.841957), ('val_auc_roc', 0.987073)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 42 | AUC_roc: 0.9870725610466364
+
+EPOCH: 43/50 --(learn_rate:0.000031) | Time: Wed Nov  6 21:29:19 2024
+OrderedDict([('epoch', 43), ('train_loss', 0.096855), ('val_loss', 0.090812), ('val_acc', 0.962204), ('val_f1', 0.841704), ('val_auc_roc', 0.987114)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 43 | AUC_roc: 0.9871144793528428
+
+EPOCH: 44/50 --(learn_rate:0.000024) | Time: Wed Nov  6 21:31:32 2024
+OrderedDict([('epoch', 44), ('train_loss', 0.096741), ('val_loss', 0.090884), ('val_acc', 0.962147), ('val_f1', 0.841547), ('val_auc_roc', 0.987093)])
+Best performance at Epoch: 43 | AUC_roc: 0.9871144793528428
+
+EPOCH: 45/50 --(learn_rate:0.000018) | Time: Wed Nov  6 21:33:48 2024
+OrderedDict([('epoch', 45), ('train_loss', 0.096625), ('val_loss', 0.090693), ('val_acc', 0.962232), ('val_f1', 0.841819), ('val_auc_roc', 0.987155)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 45 | AUC_roc: 0.9871548450903517
+
+EPOCH: 46/50 --(learn_rate:0.000012) | Time: Wed Nov  6 21:36:03 2024
+OrderedDict([('epoch', 46), ('train_loss', 0.096523), ('val_loss', 0.090569), ('val_acc', 0.962274), ('val_f1', 0.841924), ('val_auc_roc', 0.987193)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 46 | AUC_roc: 0.98719253199788
+
+EPOCH: 47/50 --(learn_rate:0.000008) | Time: Wed Nov  6 21:38:16 2024
+OrderedDict([('epoch', 47), ('train_loss', 0.096515), ('val_loss', 0.09063), ('val_acc', 0.962276), ('val_f1', 0.842127), ('val_auc_roc', 0.987181)])
+Best performance at Epoch: 46 | AUC_roc: 0.98719253199788
+
+EPOCH: 48/50 --(learn_rate:0.000004) | Time: Wed Nov  6 21:40:44 2024
+OrderedDict([('epoch', 48), ('train_loss', 0.096427), ('val_loss', 0.090568), ('val_acc', 0.96227), ('val_f1', 0.841968), ('val_auc_roc', 0.987198)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 48 | AUC_roc: 0.9871978622084309
+
+EPOCH: 49/50 --(learn_rate:0.000002) | Time: Wed Nov  6 21:43:40 2024
+OrderedDict([('epoch', 49), ('train_loss', 0.096498), ('val_loss', 0.09052), ('val_acc', 0.962293), ('val_f1', 0.842135), ('val_auc_roc', 0.987213)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 49 | AUC_roc: 0.9872129018417077
+
+EPOCH: 50/50 --(learn_rate:0.000000) | Time: Wed Nov  6 21:46:04 2024
+OrderedDict([('epoch', 50), ('train_loss', 0.096557), ('val_loss', 0.090508), ('val_acc', 0.962298), ('val_f1', 0.842204), ('val_auc_roc', 0.987217)])
+[0;33mSaving best model![0m
+Best performance at Epoch: 50 | AUC_roc: 0.9872166080930838

@@ -1,0 +1,15 @@
+transformers
+torch
+torchvision
+Pillow
+tqdm
+flask
+flask-sqlalchemy
+flask-mail
+flask-migrate
+wtforms
+werkzeug
+numpy
+pymysql
+cryptography
+email-validator

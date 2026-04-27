@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+
+        .button {
+            margin-top: 20px;
+            display: block;
+        }
+
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+
+        {% if result_image %}
+        <h2>Processed Image</h2>
+        <img src="{{ url_for('static', filename='results/' + result_image) }}" alt="Result Image">
+        {% endif %}
+
+        {% if result_zip %}
+        <h2>Download Processed ZIP File</h2>
+        <a href="{{ url_for('download_file', filename=result_zip) }}">Download Processed ZIP</a>
+
+        <!-- Add a slideshow to display all processed images -->
+        <h2>Processed Images</h2>
+        <div class="slideshow-container">
+            {% for image in images %}
+            <div class="mySlides">
+                <img src="{{ url_for('static', filename=image.replace('static/', '').replace('\\', '/')) }}" alt="Processed Image">
+            </div>
+            {% endfor %}
+            <!-- Next and Previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div style="text-align:center">
+            {% for image in images %}
+            <span class="dot" onclick="currentSlide({{ loop.index }})"></span>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <div>
+            <p><strong>Dice Score:</strong> {{ test_dice }}</p>
+            <p><strong>IoU:</strong> {{ test_iou }}</p>
+            <p><strong>Accuracy:</strong> {{ test_accuracy }}</p>
+            <p><strong>Recall:</strong> {{ test_recall }}</p>
+            <p><strong>F1 Score:</strong> {{ test_f1_score }}</p>
+        </div>
+
+        <a href="{{ url_for('qa.index') }}" class="button">Upload Another File</a>
+    </div>
+
+    <!-- JavaScript to handle the slideshow functionality -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>
+

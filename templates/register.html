@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Page</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+   <!-- login page -->
+    <div id="loginPage" class="loginContainer">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+        <h2>Real Time Retinal Vessels Segmenter</h2>
+        <form method="POST">
+        <div class="form-wrapper">
+
+                <input type="text" name="username" placeholder="username" class="input-item large-input"   required>
+                <br>
+            <br>
+                <input type="text" name="email" placeholder="email" class="input-item large-input"  required>
+                <br>
+            <br>
+                <input type="password" name="password" placeholder="password" class="input-item large-input"   required>
+                <br>
+            <br>
+                <input type="password" name="password_confirm" placeholder="password" class="input-item large-input"   required>
+                <br>
+            <br>
+                  <button class="btn btn-primary btn-lg" style="text-align: center">register</button>
+            <button class="btn btn-primary btn-lg" style="text-align: center" onclick="window.location.href='{{ url_for('auth.login') }}'">Back</button>
+
+
+        </div>
+            </form>
+    </div>
+
+       {% if message %}
+    <script>
+        alert("{{ message }}");
+    </script>
+    {% endif %}
+<script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            let isValid = true;
+
+            document.getElementById('usernameError').innerText = '';
+            document.getElementById('passwordError').innerText = '';
+
+            if (username === '') {
+                document.getElementById('usernameError').innerText = 'Username cannot be empty.';
+                isValid = false;
+            } else if (username.length < 3) {
+                document.getElementById('usernameError').innerText = 'Username must be at least 3 characters long.';
+                isValid = false;
+            }
+
+            if (password === '') {
+                document.getElementById('passwordError').innerText = 'Password cannot be empty.';
+                isValid = false;
+            } else if (password.length < 6) {
+                document.getElementById('passwordError').innerText = 'Password must be at least 6 characters long.';
+                isValid = false;
+            }
+
+            if (isValid) {
+                alert('Login successful');
+            }
+        });
+
+        function showMainPage() {
+            document.getElementById('loginPage').style.display = 'none';
+            document.getElementById('mainPage').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,265 @@
+/* 登录页面样式 */
+/* #loginPage {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.loginContainer {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    /* display: block; 强制覆盖body的flex影响 */
+    transition: all 0.3s ease;
+}
+
+.large-input {
+    width: 370px;        /* 宽度 */
+    padding: 15px;       /* 内边距，控制高度 */
+    font-size: 18px;     /* 字体大小 */
+    border-radius: 8px;  /* 圆角边框 */
+    border: 2px solid #ccc; /* 边框粗细和颜色 */
+}
+
+.loginContainer:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#loginPage img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 100px;
+}
+
+#loginPage h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#loginPage .input-field {
+    width: 91%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+#loginPage .input-field:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+    outline: none;
+}
+
+#loginPage .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+#loginPage .btn:hover {
+    background-color: #45a049;
+}
+
+#loginPage .forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#loginPage .forgot-password:hover {
+    text-decoration: underline;
+}
+
+#loginPage .social-login {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#loginPage .social-login button {
+    width: 48%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#loginPage .social-login .facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+#loginPage .social-login .google {
+    background-color: #db4a39;
+    color: white;
+}
+
+#loginPage .social-login button:hover {
+    opacity: 0.8;
+}
+
+/* 主页面样式 */
+/* #mainPage {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} */
+
+#mainPage h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#mainPage form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#mainPage label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#mainPage input[type="file"],
+#mainPage select {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#mainPage button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#mainPage button:hover {
+    background-color: #45a049;
+}
+
+#mainPage .result-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#mainPage img {
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+/* Prediction History Page Styles */
+#historyPage {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center; /* 标题居中 */
+}
+
+#historyPage h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.history-container {
+    display: inline-block; /* 使容器宽度适应内容 */
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse; /* 合并表格边框 */
+}
+
+.history-table th,
+.history-table td {
+    padding: 15px; /* 增加列间距 */
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* 添加横线分隔 */
+}
+
+.history-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+.history-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* 隔行变色 */
+}
+
+.history-table img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+#historyPage button {
+    width: 600px; /* 增加按钮宽度 */
+    padding: 12px;
+    margin: 10px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#historyPage button:hover {
+    background-color: #45a049;
+}

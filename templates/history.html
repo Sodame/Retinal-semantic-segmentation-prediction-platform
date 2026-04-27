@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="historyPage">
+        <h1>Prediction History</h1>
+
+        <div class="history-container">
+            <table class="history-table">
+                <thead>
+                    <tr>
+                        <th>Upload Date</th>
+                        <th>Model Used</th>
+                        <th>Input Image</th>
+                        <th>Result Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for history in prediction_history %}
+                    <tr>
+                        <td>{{ history.date }}</td>
+                        <td>{{ history.model }}</td>
+                        <td>
+                            <img src="{{ url_for('static', filename='converted_uploads/' + history.query_image) }}" alt="Query Image">
+                        </td>
+                        <td>
+                            <img src="{{ url_for('static', filename='results/' + history.result_image) }}" alt="Result Image">
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+<div class="pagination">
+                <div class="page-info">
+                    Page {{ page }}
+                {% if prev_url %}
+                     <div>
+                <button class="pagination-button" onclick="window.location.href='{{ prev_url }}'">Previous</button>
+                    </div>
+                {% endif %}
+                {% if next_url %}
+                     <div>
+                <button class="pagination-button" onclick="window.location.href='{{ next_url }}'">Next</button>
+                     </div>
+            {% endif %}
+        </div>
+</div>
+
+            <button type="button" onclick="window.location.href='{{ url_for('qa.index') }}'">Back to Main Page</button>
+        </div>
+    </div>
+</body>
+</html>

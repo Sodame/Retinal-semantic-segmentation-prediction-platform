@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="mainPage">
+        <h1>Upload image and choose Model</h1>
+
+<form action="/upload" method="POST" enctype="multipart/form-data">
+    <label for="file">Select an image or dataset:</label>
+    <input type="file" id="file" name="file" accept="image/*,application/zip">
+
+    <label for="model">Choose Model:</label>
+    <select name="model" id="model">
+        <option value="unet">U-Net</option>
+        <option value="laddernet">LadderNet</option>
+    </select>
+
+    <button type="submit">Predict</button>
+    <br><br>
+    <button type="button" class="btn btn-primary btn-lg" style="text-align: center" onclick="window.location.href='{{ url_for('his.history') }}'">View Prediction History</button>
+
+    <br><br>
+    <button type="button" class="btn btn-primary btn-lg" style="text-align: center" onclick="window.location.href='{{ url_for('auth.login') }}'">Logout</button>
+</form>
+
+        <div class="result-section">
+            {% if query_image %}
+            <h2>Original Image:</h2>
+            <img src="{{ url_for('static', filename=query_image) }}" alt="Query Image">
+
+            <h2>Result:</h2>
+            <img src="{{ url_for('static', filename=result_image) }}" alt="Segmented Image">
+            {% endif %}
+        </div>
+    </div>
+<script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            let isValid = true;
+
+            document.getElementById('usernameError').innerText = '';
+            document.getElementById('passwordError').innerText = '';
+
+            if (username === '') {
+                document.getElementById('usernameError').innerText = 'Username cannot be empty.';
+                isValid = false;
+            } else if (username.length < 3) {
+                document.getElementById('usernameError').innerText = 'Username must be at least 3 characters long.';
+                isValid = false;
+            }
+
+            if (password === '') {
+                document.getElementById('passwordError').innerText = 'Password cannot be empty.';
+                isValid = false;
+            } else if (password.length < 6) {
+                document.getElementById('passwordError').innerText = 'Password must be at least 6 characters long.';
+                isValid = false;
+            }
+
+            if (isValid) {
+                alert('Login successful');
+            }
+        });
+
+        function showMainPage() {
+            document.getElementById('loginPage').style.display = 'none';
+            document.getElementById('mainPage').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

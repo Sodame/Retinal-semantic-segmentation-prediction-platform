@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  vessel-seg:
+    build:
+      context: Docker_laddernet
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5000"
+    container_name: vessel-seg
+
+  my-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./processed_zips:/app/processed_zips
+      - ./uploads:/app/uploads
+      - ./static:/app/static
+    environment:
+      - FLASK_ENV=development
+    container_name: my-app
+
