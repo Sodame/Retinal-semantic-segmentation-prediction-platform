@@ -7,7 +7,7 @@
    - **Users table**
    - **Prediction history table**
 
-[Download SQL file here](https://www.dropbox.com/scl/fo/1k1hztmtpecfgvybjbrnw/AAVFRmIT07-TVkHjdNefahA?rlkey=4jwrklogub942nh675vx1cc1h&st=5ktbm02a&dl=0)
+[Download SQL file here](https://www.dropbox.com/scl/fi/uf8ye6nt7fmquzfa98mhd/LadderNet_model.pth?rlkey=uzy12op502c66lhv2ip4cdqhe&st=n93uuj2x&dl=0)
 
 ## 2. Modify Database Configuration
 In the project root directory, open the `config.py` file and update the database configuration. Modify the **username**, **password** to match your local MySQL setup.
@@ -21,7 +21,7 @@ DATABASE= "new_schema_1"
 
 ## 3. Download Model Weights
 Due to GitHub's file size limits, the model weight files are provided via a Dropbox link:
-- [Download model weights from Dropbox](https://www.dropbox.com/scl/fo/1k1hztmtpecfgvybjbrnw/AAVFRmIT07-TVkHjdNefahA?rlkey=4jwrklogub942nh675vx1cc1h&st=h3mjxh1n&dl=0).
+- [Download model weights from Dropbox](https://www.dropbox.com/scl/fi/uf8ye6nt7fmquzfa98mhd/LadderNet_model.pth?rlkey=uzy12op502c66lhv2ip4cdqhe&st=n93uuj2x&dl=0).
 - After downloading, place the two model weight files into the `modelWeight` folder located in the project's root directory.
 
 ## 4. Build and Run the Docker Containers
